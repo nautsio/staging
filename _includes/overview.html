@@ -1,0 +1,59 @@
+<!-- Expertise Section -->
+    <section id="overview" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <h2 id="sharing-knowledge">Sharing knowledge</h2>
+                    {% for post in site.posts limit:6 %}
+                    <div>
+                        <h4 class="text-muted">{{ post.title }} <span><a href="{{ post.externalurl }}">Read more</a></span></h4>
+                      
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h2 id="upcoming-events">Upcoming events</h2>
+                    <div class="event">
+                        <div class="event-details">
+                            <div class="event-date">
+                                <span class="fa-stack fa-2x"><i class="fa fa-calendar-o fa-stack-2x"></i><strong class="fa-stack-1x calendar-text">17</strong></span>
+                            </div>
+                            <div class="event-description">
+                                <h4>Docker Randstad hits Haarlem!</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-details">
+                            <div class="event-date">
+                                <span class="fa-stack fa-2x"><i class="fa fa-calendar-o fa-stack-2x"></i><strong class="fa-stack-1x calendar-text">18</strong></span>
+                            </div>
+                            <div class="event-description">
+                                <h4>Docker Global Hackday #3</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-details">
+                            <div class="event-date">
+                                <span class="fa-stack fa-2x"><i class="fa fa-calendar-o fa-stack-2x"></i><strong class="fa-stack-1x calendar-text">22</strong></span>
+                            </div>
+                            <div class="event-description">
+                                <h4>Refactoring a Monolith to Microservices</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-details">
+                            <div class="event-date">
+                                <span class="fa-stack fa-2x"><i class="fa fa-calendar-o fa-stack-2x"></i><strong class="fa-stack-1x calendar-text">22</strong></span>
+                            </div>
+                            <div class="event-description">
+                                <h4>Refactoring a Monolith to Microservices</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

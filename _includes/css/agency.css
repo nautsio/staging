@@ -176,7 +176,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default img.img-responsive {
-		width: 220px;
+		height: 60px;
 }
 
 .navbar-default .navbar-brand {
@@ -235,6 +235,33 @@ fieldset[disabled] .btn-xl.active {
     background-color: #{{ site.color.secondary }};
 }
 
+.calendar-text {
+    margin-top: .3em;
+}
+
+.event {
+    display: table;
+    margin-top: 2em;
+}
+
+.event-details {
+    display: table-row;
+}
+
+.event-date {
+    display: table-cell;
+}
+
+.event-description {
+    display: table-cell;
+    padding-left: 8px;
+    vertical-align: middle;
+}
+
+.event-month {
+    text-align: center;
+}
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
@@ -246,14 +273,14 @@ fieldset[disabled] .btn-xl.active {
     }
 
 		.navbar-default img.img-responsive {
-				width: 340px;
+				height: 60px;
 		}
     .navbar-default .navbar-brand {
         font-size: 2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-				padding: 11px 15px 20.5px;
+				padding: 0 15px 20.5px;
     }
 
     .navbar-default .navbar-nav>.active>a {
