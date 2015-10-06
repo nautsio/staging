@@ -1,7 +1,8 @@
 ---
 externalurl: http://simonvanderveldt.nl/boot2docker-on-xhyve/
 author: Simon van der Veldt
-category: blog
+category: blogpost
+tags: docker
 title: "boot2docker on xhyve"
 ---
 xhyve is a new hypervisor in the vein of KVM on Linux and bhyve on BSD. It’s actually a port of BSD’s bhyve to OS X.
