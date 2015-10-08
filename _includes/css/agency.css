@@ -645,6 +645,10 @@ section h3.section-subheading {
 }
 
 @media(min-width:1200px) {
+    .container {
+        width: 100em;
+    }
+
     .timeline>li {
         min-height: 170px;
     }

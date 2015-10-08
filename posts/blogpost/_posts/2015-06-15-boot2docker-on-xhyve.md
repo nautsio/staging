@@ -1,9 +1,7 @@
 ---
-externalurl: http://simonvanderveldt.nl/boot2docker-on-xhyve/
 author: Simon van der Veldt
-category: blogpost
 tags: docker
-title: "boot2docker on xhyve"
+externalurl: http://simonvanderveldt.nl/boot2docker-on-xhyve/
 ---
 xhyve is a new hypervisor in the vein of KVM on Linux and bhyve on BSD. It’s actually a port of BSD’s bhyve to OS X.
 It’s more similar to KVM than to Virtualbox in that it’s minimal and commandline only which makes it a good fit for an always running virtual machine like boot2docker on OS X.
