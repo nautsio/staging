@@ -1,0 +1,22 @@
+section#overview {
+    background-image: url(http://www.slavinskas.com/scifi-photo/stash/soyuz-rocket-blueprint-3000x4000.jpg);
+    background-size: 100%;
+    background-blend-mode: lighten;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+div.post, div.hands-on, div.event {
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 1px #ddd;
+
+}
+
+div.post h4, div.hands-on h4, div.event h4 {
+    color: #00b3fe;
+}
