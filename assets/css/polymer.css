@@ -1,0 +1,80 @@
+body {
+    font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 100;
+}
+
+h1 {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+a {
+    color: #FED136;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+a span {
+    color: #00b3fe;
+    text-decoration: none;
+}
+
+#topBar {
+    padding-left: 30px;
+}
+
+.column {
+    min-width: 360px;
+    max-width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column-title {
+    text-align: center;
+}
+
+paper-card {
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: whitesmoke;
+}
+
+.avatar {
+  display: inline-block;
+  height: 64px;
+  width: 64px;
+  background-size: 100%;
+}
+.docker {
+  background-image: url(/assets/img/naut_blue_small.png);
+}
+.mesos {
+  background-image: url(/assets/img/naut_yellow_small.png);
+}
+.coreos {
+  background-image: url(/assets/img/naut_orange_small.png);
+}
+.consul, .terraform {
+  background-image: url(/assets/img/naut_red_small.png);
+}
+
+.fancy .title {
+  position: absolute;
+  top: 16px;
+  left: 100px;
+}
+.fancy .medium {
+  font-size: 19px;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  color: #00b3fe;
+}
+.fancy .small {
+    font-size: 15px;
+}
