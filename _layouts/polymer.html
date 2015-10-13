@@ -17,20 +17,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css">
     <link rel="import" href="/bower_components/paper-card/paper-card.html">
 
-
-    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="{{ "/assets/css/polymer.css" | prepend: site.baseurl }}">
-
-    <!-- Custom Fonts -->
-    <link rel="stylesheet" href="{{ "/assets/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
-
+    <link rel="stylesheet" href="/assets/css/devops-icon-font.css">
+    <link rel="stylesheet" href="/assets/css/polymer.css">
     <style is="custom-style">:root { --paper-toolbar-background: #00b3fe; }</style>
 </head>
 
 <body class="fullbleed vertical layout">
     <paper-header-panel class="flex">
         <paper-toolbar>
-            <div><a href="/"><img src="{{ "/assets/img/cargonauts-nauts.png" | prepend: site.baseurl }}" height="48"></a></div>
+            <div><a href="/"><img src="/assets/img/cargonauts-nauts.png" height="48"></a></div>
         </paper-toolbar>
 
         {{ content }}
