@@ -2,6 +2,6 @@
 title: "Docker & Consul"
 author: Adé Mochtar
 category: workshop
-tags: consul
+tags: docker consul
 externalurl: http://nauts.io/workshop-docker-consul/
 ---
