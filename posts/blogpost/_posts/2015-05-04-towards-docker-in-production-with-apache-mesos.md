@@ -4,4 +4,5 @@ author: Ivo Verberk
 tags: docker mesos
 externalurl: http://www.ivoverberk.nl/towards-docker-in-production-with-apache-mesos/
 ---
-In this post I will describe a Docker infrastructure based on Apache Mesos. Mesos has been battle-tested and as such qualifies, in my opinion, as one of the more mature infrastructure platforms for running Docker containers across multiple hosts. The goal of this post is to quickly get started and experiment with a production grade Docker infrastructure. 
+The battle-tested [Mesos](https://mesos.apache.org) is one of the more mature multi-host platforms for running Docker containers.
+In this post we'll get started with a production grade Docker infrastructure based on Mesos. 

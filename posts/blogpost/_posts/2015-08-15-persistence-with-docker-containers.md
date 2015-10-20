@@ -1,9 +1,7 @@
 ---
-title: "Innovation Day At KLM: Persistence With Docker Containers"
 author: Armin Coralic
-tags: docker
+tags: docker flocker
 externalurl: http://blog.xebia.com/2015/08/15/innovation-day-at-klm-persistence-with-docker-containers-2/
 ---
-On 3th of July KLM and the Nauts joined forces at KLM headquarters for an innovation day. The goal was to share knowledge and find out how to properly do “Persistence with Docker containers”.
-<p>
-Learn what we encountered, while we dove into GlusterFS and Flocker, trying to solve data persistence.
+What to do with persistent data in a containerized world?
+Apart from existing options this post and it's follow-ups discuss the possibilities of containers in combination with both [GlusterFS](https://www.gluster.org/) and [Flocker](https://github.com/ClusterHQ/flocker).
