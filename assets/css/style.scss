@@ -1,3 +1,8 @@
+---
+---
+
+@import "colors";
+
 body {
     font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 100;
@@ -9,17 +14,12 @@ h1 {
 }
 
 a {
-    color: #FED136;
+    color: $nauts-blue;
     text-decoration: none;
 }
 
 a:hover, a:focus {
-    text-decoration: underline;
-}
-
-a span {
-    color: #00b3fe;
-    text-decoration: none;
+    border-bottom: 1px solid $nauts-orange;
 }
 
 #topBar {
@@ -45,33 +45,9 @@ paper-card {
   background-color: whitesmoke;
 }
 
-.avatar {
-  display: inline-block;
-  height: 64px;
-  width: 64px;
-  background-size: 100%;
-}
-.docker {
-  background-image: url(/assets/img/naut_blue_small.png);
-}
-.mesos {
-  background-image: url(/assets/img/naut_yellow_small.png);
-}
-.coreos {
-  background-image: url(/assets/img/naut_orange_small.png);
-}
-.consul, .terraform {
-  background-image: url(/assets/img/naut_red_small.png);
-}
-
-/*.fancy .title {
-  position: absolute;
-  top: 16px;
-  left: 100px;
-}*/
 paper-card img {
   width: 100%;
-  background-color: #00b3fe;
+  background-color: $nauts-blue;
   background-image: linear-gradient(0deg, transparent 24%, rgba(255,255,255, 0.2) 25%, rgba(255,255,255, 0.2) 26%, transparent 27%, transparent 74%, rgba(255,255,255, 0.2) 75%, rgba(255,255,255, 0.2) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255,255,255, 0.2) 25%, rgba(255,255,255, 0.2) 26%, transparent 27%, transparent 74%, rgba(255,255,255, 0.2) 75%, rgba(255,255,255, 0.2) 76%, transparent 77%, transparent);
   background-size: 50px 50px;
 }
@@ -79,7 +55,7 @@ paper-card .title .medium {
   font-size: 19px;
   text-transform: uppercase;
   padding-bottom: 8px;
-  color: #00b3fe;
+  color: $nauts-blue;
 }
 paper-card .title .small {
   font-size: 13px;
