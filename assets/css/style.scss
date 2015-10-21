@@ -4,69 +4,72 @@
 @import "colors";
 
 body {
-    font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 100;
+  font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 100;
+  font-size: 15px;
 }
 
 h1 {
-    font-weight: 100;
-    text-transform: uppercase;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 a {
-    color: $nauts-blue;
-    text-decoration: none;
+  color: $nauts-blue;
+  text-decoration: none;
 }
 
 a:hover, a:focus {
-    border-bottom: 1px solid $nauts-orange;
+  border-bottom: 1px solid $nauts-orange;
 }
 
+paper-toolbar {
+  background-color: $nauts-blue !important;
+}
 #topBar {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 .column {
-    min-width: 360px;
-    max-width: 360px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  min-width: 360px;
+  max-width: 360px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .column-title {
-    text-align: center;
+  text-align: center;
 }
 
 paper-card {
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   background-color: whitesmoke;
 }
-
 paper-card img {
   width: 100%;
   background-color: $nauts-blue;
   background-image: linear-gradient(0deg, transparent 24%, rgba(255,255,255, 0.2) 25%, rgba(255,255,255, 0.2) 26%, transparent 27%, transparent 74%, rgba(255,255,255, 0.2) 75%, rgba(255,255,255, 0.2) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255,255,255, 0.2) 25%, rgba(255,255,255, 0.2) 26%, transparent 27%, transparent 74%, rgba(255,255,255, 0.2) 75%, rgba(255,255,255, 0.2) 76%, transparent 77%, transparent);
   background-size: 50px 50px;
 }
-paper-card .title .medium {
+paper-card .card-content {
+  padding-bottom: 0;
+}
+paper-card .title {
   font-size: 19px;
   text-transform: uppercase;
-  padding-bottom: 8px;
   color: $nauts-blue;
 }
-paper-card .title .small {
-  font-size: 13px;
+paper-card .small {
+  font-size: 0.85em;
 }
-paper-card .excerpt {
-  font-size: 15px;
+paper-card .card-actions {
+  height: 32px;
 }
 .devops-font {
-  width: 24px;
-  height: 24px;
-  font-size: 18px;
-  padding: 11px;
-  display: inline-block;
+  font-size: 1.2em;
+}
+.devops-font i {
+  padding-left: 14px;
 }
