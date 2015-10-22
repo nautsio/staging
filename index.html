@@ -29,12 +29,12 @@ layout: polymer
             {% endfor %}
         </div>
     </div>
-    <div class="layout horizontal center-justified">
+    <div class="layout horizontal darker">
         <div class="layout vertical">
             <div class="center"><h1>partners</h1></div>
-            <div class="layout horizontal center-justified wrap">
+            <div class="layout horizontal wrap">
                 {% for post in site.partner %}
-                <div class="layout vertical column">
+                <div class="layout vertical column center">
                     {% include post.html post-type='partner' %}
                 </div>
                 {% endfor %}
