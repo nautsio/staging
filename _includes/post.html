@@ -1,11 +1,18 @@
-<paper-card class="fancy">
-    {% if post.img %}<img src="/assets/img/header/{{ post.img }}.png">{% endif %}
+{% if include.post-type != 'partner' %}
+	{% assign imgdir = 'header' %}
+{% else %}
+	{% assign imgdir = 'partner' %}
+{% endif %}
+<paper-card>
+    {% if post.img %}<img src="/assets/img/{{ imgdir }}/{{ post.img }}.png">{% endif %}
     <div class="card-content">
         <div class="title"><a href="{{ post.externalurl }}"><span>{{ post.title }}</span></a></div>
-        <div class="excerpt">{{ post.excerpt }}</div>
+        <div class="excerpt">{{ post.content }}</div>
     </div>
+    {% if include.post-type != 'partner' %}
     <div class="card-actions layout horizontal center justified">
         <div class="small">{% if include.post-type == 'calendar' %}{{ post.date | date: "%-d %B %Y" | downcase }}{% else %}{{ post.author }}{% endif %}</div>
         <div class="devops-font">{% for tag in post.tags %}<i title="{{ tag | capitalize }}" class="icon-{{ tag }}"></i>{% endfor %}</div>
     </div>
+    {% endif %}
 </paper-card>
