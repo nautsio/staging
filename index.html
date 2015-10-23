@@ -1,44 +1,41 @@
 ---
 layout: polymer
 ---
-
-<div class="layout vertical">
     <div class="layout horizontal center-justified wrap">
         <div class="layout vertical column">
-            <div class="center"><h1 id="sharing-knowledge">Sharing knowledge</h1></div>
+            <div class="align-center"><h1 id="sharing-knowledge">Sharing knowledge</h1></div>
             {% for post in site.categories.blogpost limit:4 %}
                     {% include post.html %}
             {% endfor %}
         </div>
         <div class="layout vertical column">
-            <div class="center"><h1>Testimonials</h1></div>
+            <div class="align-center"><h1>Testimonials</h1></div>
             {% for post in site.categories.customer-story %}
                 {% include post.html %}
             {% endfor %}
         </div>
         <div class="layout vertical column">
-            <div class="center"><h1>Try it yourself</h1></div>
+            <div class="align-center"><h1>Try it yourself</h1></div>
             {% for post in site.categories.workshop %}
                 {% include post.html %}
             {% endfor %}
         </div>
        <div class="layout vertical column">
-            <div class="center"><h1>Calendar</h1></div>
+            <div class="align-center"><h1>Calendar</h1></div>
             {% for post in site.categories.calendar %}
                 {% include post.html post-type='calendar' %}
             {% endfor %}
         </div>
     </div>
-    <div class="layout horizontal darker">
-        <div class="layout vertical">
-            <div class="center"><h1>partners</h1></div>
+    <div class="layout horizontal black-on-grey">
+        <div class="layout vertical full-width">
+            <div class="align-center"><h1>partners</h1></div>
             <div class="layout horizontal wrap">
                 {% for post in site.partner %}
-                <div class="layout vertical column center">
+                <div class="layout vertical column align-center hide-card square-header-img">
                     {% include post.html post-type='partner' %}
                 </div>
                 {% endfor %}
             </div>
         </div>
     </div>
-</div>

@@ -23,11 +23,30 @@ a:hover, a:focus {
   border-bottom: 1px solid $nauts-orange;
 }
 
-paper-toolbar {
-  background-color: $nauts-blue !important;
+.full-width {
+  width: 100%;
 }
+.align-center {
+  text-align: center;
+}
+
 #topBar {
   padding-left: 30px;
+}
+footer > div {
+  height: 64px;
+}
+footer a .fa {
+  font-size: 1.2em;
+  color: $white;
+  padding-bottom: 0.4em;
+}
+footer a:hover, footer a:hover .fa {
+  color: $nauts-orange;
+  border: 0;
+}
+.tiny {
+  font-size: 0.75em;
 }
 
 .column {
@@ -37,9 +56,6 @@ paper-toolbar {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-}
-.center {
-  text-align: center;
 }
 
 paper-card {
@@ -74,19 +90,26 @@ paper-card .card-actions {
   padding-left: 14px;
 }
 
-div.darker {
-  background-color: $wild-sand;
+.black-on-grey {
+  background-color: $gallery;
 }
-.darker > div {
-  width: 100%;
+.white-on-blue {
+  background-color: $nauts-blue !important;
+  color: $white !important;
 }
-.darker paper-material {
+.white-on-blue a {
+  color: black;
+}
+
+.hide-card paper-card {
+  background-color: transparent;
+}
+.hide-card paper-card paper-material {
   box-shadow: initial !important;
 }
-.darker paper-card {
-  background-color: transparent;
-}
-.darker paper-card img {
+.square-header-img paper-card img {
   background-color: transparent;
   background-image: initial;
+  width: 150px;
+  height:150px;
 }

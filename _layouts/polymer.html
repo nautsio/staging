@@ -15,6 +15,7 @@
     <link rel="import" href="/bower_components/paper-toolbar/paper-toolbar.html">
     <link rel="import" href="/bower_components/font-roboto/roboto.html">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="import" href="/bower_components/paper-card/paper-card.html">
 
     <link rel="stylesheet" href="/assets/css/devops-icon-font.css">
@@ -23,11 +24,13 @@
 
 <body class="fullbleed vertical layout">
     <paper-header-panel class="flex">
-        <paper-toolbar>
+        <paper-toolbar class="white-on-blue">
             <div><a href="/"><img src="/assets/img/cargonauts-nauts.png" height="48"></a></div>
         </paper-toolbar>
-
+        <div class="layout vertical">
         {{ content }}
+        {% include footer.html %}
+        </div>
     </paper-header-panel>
 </body>
 </html>
