@@ -6,7 +6,7 @@
 <paper-card>
     {% if post.img %}<img src="/assets/img/{{ imgdir }}/{{ post.img }}.png">{% endif %}
     <div class="card-content">
-        <div class="title"><a href="{{ post.externalurl }}"><span>{{ post.title }}</span></a></div>
+        <div class="title"><h3><a href="{{ post.externalurl }}">{{ post.title }}</a></h3></div>
         <div class="excerpt">{{ post.content }}</div>
     </div>
     {% if include.post-type != 'partner' %}
