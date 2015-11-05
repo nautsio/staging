@@ -39,3 +39,15 @@ layout: polymer
             </div>
         </div>
     </div>
+    <div class="layout horizontal">
+        <div class="layout vertical full-width">
+            <div class="align-center"><h1>services</h1></div>
+            <div class="layout horizontal wrap">
+                {% for post in site.services %}
+                <div class="layout vertical column align-center hide-card square-header-img">
+                    {% include post.html post-type='partner' %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>

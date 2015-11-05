@@ -11,6 +11,7 @@ social:
 
 collections:
  - partner
+ - services
 
 permalink: pretty
 markdown: kramdown
