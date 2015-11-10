@@ -1,17 +1,19 @@
 ---
 layout: polymer
 ---
+{% assign basicposts = site.categories.blogpost | where: "difficulty", "basic" %}
+{% assign advancedposts = site.categories.blogpost | where: "difficulty", "advanced" %}
     <div class="layout horizontal center-justified wrap">
         <div class="layout vertical column">
             <div class="align-center"><h1 id="sharing-knowledge">Sharing knowledge</h1></div>
-            {% for post in site.categories.blogpost limit:4 %}
+            {% for post in basicposts limit:4 %}
                     {% include post.html %}
             {% endfor %}
         </div>
         <div class="layout vertical column">
-            <div class="align-center"><h1>Testimonials</h1></div>
-            {% for post in site.categories.customer-story %}
-                {% include post.html %}
+            <div class="align-center"><h1 id="sharing-knowledge">Sharing knowledge</h1></div>
+            {% for post in advancedposts limit:4 %}
+                    {% include post.html %}
             {% endfor %}
         </div>
         <div class="layout vertical column">
