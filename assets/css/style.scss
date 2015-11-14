@@ -38,9 +38,13 @@ a:hover, a:focus {
 #topBar {
   padding-left: 30px;
 }
-.logo-text {
+#logo-text {
   margin-left: 1em;
   margin-right: 1em;
+}
+#slogan {
+  font-weight: bold;
+  display: none;
 }
 footer > div {
   height: 64px;
@@ -135,6 +139,9 @@ paper-card .card-actions {
 
 
 @media only screen and (min-width: 400px) {
+  #slogan {
+    display: inline;
+  }
   .column {
     padding-left: 20px;
     padding-right: 20px;
