@@ -6,6 +6,7 @@
 <paper-card>
     {% if post.img %}<img src="/assets/img/{{ imgdir }}/{{ post.img }}.png">{% endif %}
     {% if post.icon %}<span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary {{ post.iconcolor }}"></i><i class="fa fa-{{ post.icon }} fa-stack-1x fa-inverse"></i></span>{% endif %}
+    {% if post.youtube %}<div class="header style-scope paper-card"><div class="video"><iframe src="{{ post.youtube }}" frameborder="0" allowfullscreen></iframe></div></div>{% endif %}
     <div class="card-content">
         <div class="title"><h3><a href="{{ post.externalurl }}">{{ post.title }}</a></h3></div>
         <div class="excerpt">{{ post.content }}</div>
