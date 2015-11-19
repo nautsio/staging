@@ -15,13 +15,13 @@ layout: polymer
     <div class="layout horizontal center-justified wrap">
         <div class="layout vertical column">
             <div class="align-center"><h1 id="sharing-knowledge">Sharing knowledge</h1></div>
-            {% for post in basicposts limit:4 %}
+            {% for post in basicposts %}
                     {% include post.html %}
             {% endfor %}
         </div>
         <div class="layout vertical column">
             <div class="align-center"><h1 id="sharing-knowledge">Sharing knowledge</h1></div>
-            {% for post in advancedposts limit:4 %}
+            {% for post in advancedposts %}
                     {% include post.html %}
             {% endfor %}
         </div>
